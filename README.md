@@ -2,7 +2,7 @@
 A simple chip 8 emulator written in C.
 
 # Compile with make
-$ make e
+$ make
 
 # For execute a game
 (There are a lot of games into the games direcotry)
