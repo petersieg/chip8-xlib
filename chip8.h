@@ -17,8 +17,18 @@
 
 #define DEBUG 0
 
-#define WIDTH   1280
-#define HEIGHT  640
+#ifdef SCRSIZEM
+#define WIDTH   640 /*1280*/ /* Medium=Default */
+#define HEIGHT  320 /*640*/
+#endif
+#ifdef SCRSIZEL
+#define WIDTH   1280 /*1280*/
+#define HEIGHT  640 /*640*/
+#endif
+#ifdef SCRSIZES
+#define WIDTH   320 /*1280*/
+#define HEIGHT  160 /*640*/
+#endif
 
 #define ROWS    32
 #define COLS    64

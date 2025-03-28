@@ -2,7 +2,15 @@
 #include "include/gfx.h"
 #include <X11/Xlib.h>
 
-#define SQUARE_SIZE 20
+#ifdef SCRSIZEM
+#define SQUARE_SIZE 10 /*20*/ /* Medium=Default */
+#endif
+#ifdef SCRSIZEL
+#define SQUARE_SIZE 20 /*20*/
+#endif
+#ifdef SCRSIZES
+#define SQUARE_SIZE 5 /*20*/
+#endif 
 
 #define EXPANDED_ROWS ROWS * SQUARE_SIZE
 #define EXPANDED_COLS COLS * SQUARE_SIZE
